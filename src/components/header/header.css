@@ -7,7 +7,7 @@ header {
 .header__container {
     text-align: center;
     height: 100%;
-    position: realtive;
+    position: relative;
 }
 
 /* ============ CTA ============ */
@@ -25,7 +25,7 @@ header {
     align-items: center;
     gap: 0.8rem;
     position: absolute;
-    left: 5.3rem;
+    left: 0;
     bottom: 3rem;
 }
 
@@ -52,7 +52,7 @@ header {
 /* ============ SCROLL DOWN ============ */
 .scroll__down {
     position: absolute;
-    right: 5.3rem;
+    right: -2.3rem;
     bottom: 5rem;
     transform: rotate(90deg);
     font-weight: 300;
