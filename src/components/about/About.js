@@ -40,15 +40,15 @@ const About = () => {
           </div>
 
           <p>
-            Hello! My name is Milos and I enjoy creating things that live on the
-            internet. My interest in web development started back in 2015 when I
-            decided to try editing custom Tumblr themes — turns out hacking
-            together a custom reblog button taught me a lot about HTML & CSS!
-            Fast-forward to today, and I’ve had the privilege of working at an
-            advertising agency, a start-up, a huge corporation, and a
-            student-led design studio. My main focus these days is building
-            accessible, inclusive products and digital experiences at
-            Upstatement for a variety of clients.
+            Hello! My name is Milos, and I enjoy creating things that live on
+            the internet. My interest in web development started back in 2015,
+            when I decided to try editing custom Tumblr themes. A custom reblog
+            button taught me a lot about HTML & CSS! Fast-forward to today,
+            I'have the privilege of working at small company. My main focus
+            these days is to be able to actually create enjoyable interactions
+            and experiences for everyone! And with a lot of effort, study and
+            dedication to work, I'm now able to truly call myself a Front-End
+            Developer.
           </p>
 
           <a href="#contact" className="btn btn-primary">

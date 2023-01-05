@@ -12,33 +12,33 @@ const Services = () => {
         {/* UI/UX */}
         <article className="service">
           <div className="service__head">
-            <h3>UI/UX Design</h3>
+            <h3>UI/UX design</h3>
           </div>
 
           <ul className="service__list">
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem, ipsum dolor sit amet consecteture elit.</p>
+              <p>Performing CTA and primary action buttons</p>
             </li>
 
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem, ipsum dolor sit amet consecteture elit.</p>
+              <p>Image Overlaying</p>
             </li>
 
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem, ipsum dolor sit amet consecteture elit.</p>
+              <p>Colours & Gradients</p>
             </li>
 
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem, ipsum dolor sit amet consecteture elit.</p>
+              <p>Text Styles and Fonts</p>
             </li>
 
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem, ipsum dolor sit amet consecteture elit.</p>
+              <p>Error Messages</p>
             </li>
           </ul>
         </article>
@@ -53,27 +53,27 @@ const Services = () => {
           <ul className="service__list">
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem, ipsum dolor sit amet consecteture elit.</p>
+              <p>Fast and user firendly websites.</p>
             </li>
 
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem, ipsum dolor sit amet consecteture elit.</p>
+              <p>Cross browser compatibility websites.</p>
             </li>
 
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem, ipsum dolor sit amet consecteture elit.</p>
+              <p>Secured websites</p>
             </li>
 
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem, ipsum dolor sit amet consecteture elit.</p>
+              <p>Clear and Effective CTAs</p>
             </li>
 
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem, ipsum dolor sit amet consecteture elit.</p>
+              <p>Optimized content</p>
             </li>
           </ul>
         </article>
@@ -88,27 +88,22 @@ const Services = () => {
           <ul className="service__list">
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem, ipsum dolor sit amet consecteture elit.</p>
+              <p>identifying a new topic user wants to write about</p>
             </li>
 
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem, ipsum dolor sit amet consecteture elit.</p>
+              <p>Deciding which form user wants the content to take</p>
             </li>
 
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem, ipsum dolor sit amet consecteture elit.</p>
+              <p>Formalizing users strategy (keyword or otherwise)</p>
             </li>
 
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem, ipsum dolor sit amet consecteture elit.</p>
-            </li>
-
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Lorem, ipsum dolor sit amet consecteture elit.</p>
+              <p>Producing of well-established process</p>
             </li>
           </ul>
         </article>

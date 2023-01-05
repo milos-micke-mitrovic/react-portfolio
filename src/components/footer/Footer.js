@@ -1,5 +1,6 @@
-import { BsFacebook } from "react-icons/bs";
+import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
 import { AiOutlineInstagram } from "react-icons/ai";
+import logo from "../../assets/mickeLogo.png";
 
 import "./footer.css";
 
@@ -7,7 +8,7 @@ const Footer = () => {
   return (
     <footer>
       <a href="/#" className="footer__logo">
-        LOGO
+        <img className="footer__img" src={logo} alt="Mickes logo" />
       </a>
 
       <ul className="footer__permalinks">
@@ -36,16 +37,32 @@ const Footer = () => {
         </li>
 
         <li>
-          <a href="#Contact">Contact</a>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
 
       <div className="footer__socials">
-        <a href="https://facebook.com">
-          <BsFacebook />
+        <a
+          href="https://github.com/milos-micke-mitrovic"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <BsGithub />
         </a>
 
-        <a href="https://instagram.com">
+        <a
+          href="https://www.linkedin.com/in/milos-micke-mitrovic/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <BsLinkedin />
+        </a>
+
+        <a
+          href="https://www.instagram.com/m1zzk3"
+          rel="noreferrer"
+          target="_blank"
+        >
           <AiOutlineInstagram />
         </a>
       </div>
