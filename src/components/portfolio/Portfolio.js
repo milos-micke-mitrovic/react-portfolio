@@ -1,4 +1,4 @@
-import reactSelectImg from "../../assets/react-select.png";
+import reactPlaygroundImg from "../../assets/react-ts-playground.png";
 import reactShoppingCartImg from "../../assets/react-shopping-cart.png";
 import reactHangmanImg from "../../assets/react-ts-hangman.png";
 import reactNotesImg from "../../assets/react-ts-notes.png";
@@ -15,15 +15,15 @@ const Portfolio = () => {
       <div className="container portfolio__container">
         <article className="portfolio__item">
           <div className="portfolio__item-image">
-            <img src={reactSelectImg} alt="react-ts-select" />
+            <img src={reactPlaygroundImg} alt="react-ts-select" />
           </div>
 
           <div className="portfolio__item-cta-and-title">
-            <h3>React TS Select</h3>
+            <h3>React TS Playground</h3>
 
             <div className="portfolio__item-cta">
               <a
-                href="https://github.com/milos-micke-mitrovic/react-ts-select"
+                href="https://github.com/milos-micke-mitrovic/react-playground"
                 className="btn"
                 target="_blank"
                 rel="noreferrer"
@@ -31,14 +31,14 @@ const Portfolio = () => {
                 GitHub
               </a>
 
-              {/* <a
-              href="https://dribbble.com/Alien_pixels"
+              <a
+              href="https://react-ts-playground.vercel.app"
               className="btn btn-primary"
               target="_blank"
               rel="noreferrer"
             >
               Live Demo
-            </a> */}
+            </a>
             </div>
           </div>
         </article>
