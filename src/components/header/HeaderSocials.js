@@ -1,4 +1,4 @@
-import { BsLinkedin, BsFacebook, BsGithub } from "react-icons/bs";
+import { BsLinkedin, BsGithub } from "react-icons/bs";
 
 const HeaderSocials = () => {
   return (
@@ -18,14 +18,6 @@ const HeaderSocials = () => {
       >
         <BsGithub />
       </a>
-
-      {/* <a
-        href="https://www.facebook.com/milos.m.mitrovic"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <BsFacebook />
-      </a> */}
     </div>
   );
 };

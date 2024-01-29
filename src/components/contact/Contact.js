@@ -1,5 +1,7 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import { MdOutlineEmail } from "react-icons/md";
 import { RiMessengerLine } from "react-icons/ri";
@@ -11,7 +13,7 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+  
     emailjs
       .sendForm(
         "service_6458bnq",
@@ -22,12 +24,14 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          toast.success("Email sent successfully!");
         },
         (error) => {
           console.log(error.text);
+          toast.error("Error sending email! Try contacting me another way.");
         }
       );
-
+  
     e.target.reset();
   };
 
@@ -67,7 +71,6 @@ const Contact = () => {
             </a>
           </div>
         </div>
-        {/* END OF CONTACT OPTIONS */}
 
         <form ref={form} onSubmit={sendEmail}>
           <input
@@ -91,6 +94,8 @@ const Contact = () => {
           </button>
         </form>
       </div>
+
+      <ToastContainer />
     </section>
   );
 };

@@ -1,4 +1,4 @@
-import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { AiOutlineInstagram } from "react-icons/ai";
 import logo from "../../assets/mickeLogo.png";
 
