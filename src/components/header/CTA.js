@@ -1,4 +1,4 @@
-import CV from "../../assets/Milos_Mitrovic_CV.pdf";
+import CV from "../../assets/Milos_Mitrovic_CV2.pdf";
 
 const CTA = () => {
   return (
