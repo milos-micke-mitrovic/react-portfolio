@@ -3,10 +3,15 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/node",
+      "use": "@vercel/static-build",
       "config": {
-        "nodeVersion": "22.x"
+        "nodeVersion": "22.x",
+        "distDir": "build"
       }
     }
+  ],
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/.*", "dest": "/index.html" }
   ]
 }
