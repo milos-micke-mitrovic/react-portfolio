@@ -1,7 +1,9 @@
 import React, { useRef, FormEvent, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import CustomToastContainer, {
+  successToast,
+  errorToast,
+} from "../ui/CustomToast";
 import { MdOutlineEmail } from "react-icons/md";
 import { RiMessengerLine } from "react-icons/ri";
 import { AiOutlineInstagram } from "react-icons/ai";
@@ -93,7 +95,12 @@ export const Contact: React.FC = () => {
     }
 
     setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      errorToast("Please fix the errors in the form");
+      return false;
+    }
+    return true;
   };
 
   const handleChange = (
@@ -111,10 +118,7 @@ export const Contact: React.FC = () => {
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    if (!validateForm()) {
-      toast.error("Please fix the errors in the form");
-      return;
-    }
+    if (!validateForm()) return;
 
     setIsSubmitting(true);
 
@@ -129,19 +133,17 @@ export const Contact: React.FC = () => {
         .then(
           (result) => {
             console.log(result.text);
-            toast.success("Email sent successfully!");
+            setIsSubmitting(false);
+            successToast("Email sent successfully!");
+            form.current?.reset();
             setFormData({ name: "", email: "", message: "" });
           },
           (error) => {
             console.log(error.text);
-            toast.error("Error sending email! Try contacting me another way.");
+            setIsSubmitting(false);
+            errorToast("Error sending email! Try contacting me another way.");
           }
-        )
-        .finally(() => {
-          setIsSubmitting(false);
-        });
-
-      e.currentTarget.reset();
+        );
     }
   };
 
@@ -270,7 +272,7 @@ export const Contact: React.FC = () => {
         </motion.form>
       </div>
 
-      <ToastContainer position="bottom-right" theme="dark" />
+      <CustomToastContainer />
     </section>
   );
 };

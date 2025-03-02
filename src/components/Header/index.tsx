@@ -3,8 +3,16 @@ import CTA from "./CTA";
 import HeaderSocials from "./HeaderSocials";
 import me from "../../assets/me.png";
 import { motion } from "framer-motion";
+import { FiArrowDown } from "react-icons/fi";
 
 const Header: React.FC = () => {
+  const scrollToAbout = () => {
+    const aboutSection = document.getElementById("about");
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <header className="h-screen pt-28 overflow-hidden">
       <div className="container h-full relative">
@@ -52,9 +60,23 @@ const Header: React.FC = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            <span className="font-light text-sm rotate-90 origin-bottom-right mr-2 transform translate-y-8">
-              Scroll Down
-            </span>
+            <motion.div
+              className="flex items-center cursor-pointer group"
+              onClick={scrollToAbout}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <span className="font-light text-sm rotate-90 origin-bottom-right mr-2 transform translate-y-8 group-hover:text-primary transition-colors duration-300">
+                Scroll Down
+              </span>
+              <motion.div
+                className="text-primary ml-2"
+                animate={{ y: [0, 5, 0] }}
+                transition={{ repeat: Infinity, duration: 1.5 }}
+              >
+                <FiArrowDown size={20} />
+              </motion.div>
+            </motion.div>
           </motion.div>
         </div>
       </div>
